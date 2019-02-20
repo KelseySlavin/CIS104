@@ -1,7 +1,7 @@
 import calculator
 value=0.0
 
-op=input("What operation would you like, +,-,*,/,ms,mr,mc,invert,power:")
+op=input("What operation would you like, +,-,*,/,memory_store,memory_return,memory_clear,invert,power,exit:")
 
 num_1=float(input("Enter your first number: "))
 num_2=input("Enter your second number (leave blank for 'invert' or 'ms'): ")
@@ -19,16 +19,15 @@ elif op== '/':
     value=calculator.divide(float(num_1), float(num_2))
     print(num_1, "/", num_2, "=", value)
 
-elif op== 'ms':
-    calculator.ms(value)
+elif op== 'memory_store':
+    calculator.memory_store(value)
 
-elif op== 'mr':
-    value=calculator.mr()
+elif op== 'memory_return':
+    value=calculator.memory_return()
     print=(value)
 
-elif op== 'mc':
-
-    calculator.mc
+elif op== 'memory_clear':
+     calculator.memory_clear
 
 elif op=='invert':
     value=calculator.invert(num_1)
@@ -37,6 +36,11 @@ elif op=='invert':
 elif op=='power':
     value=calculator.power(float(num_1),float(num_2))
     print(value)
+
+
+
+
+
 
 
 

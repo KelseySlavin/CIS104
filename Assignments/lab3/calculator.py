@@ -7,21 +7,18 @@ def sub(n1, n2):
 def multi(n1, n2):
     return n1 * n2
 
-def add(n1, n2):
+def divide(n1, n2):
     return n1 / n2
-
-def add(n1, n2):
-    return n1 + n2
 
 value=0
 
-def ms(num):
+def memory_store(num):
     value=num
 
-def mr():
+def memory_return():
     return value
 
-def mc():
+def memory_clear():
     value=0
 
 def invert(num):
@@ -29,7 +26,6 @@ def invert(num):
 
 def power(base,num):
     return pow(base,num)
-
 
 
 
