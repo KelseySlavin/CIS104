@@ -19,10 +19,10 @@ class Tests(unittest.TestCase):
         self.assertequal (calulator.multi(100, 5), 500)
 
     def testdivide(self):
+        self.assertequal (calulator.divide(10, 2), 5)
+        self.assertequal (calulator.divide(15, 3), 5)
+        self.assertequal (calulator.divide(40, 10), 4)
         
-        
-
-        
-
+    
 if __name__ == '__main__':
     unittest.main()
